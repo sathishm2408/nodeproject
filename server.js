@@ -54,6 +54,13 @@ app.get('/about',(req,res)=>{
 	});
 });
 
+app.get('/project',(req,res)=>{
+	res.render('project.hbs',{
+		title:'project',
+		//year:new Date().getFullYear()
+	});
+});
+
 app.listen(port);
 
 /*app.get('/:name',(req,res)=>{
